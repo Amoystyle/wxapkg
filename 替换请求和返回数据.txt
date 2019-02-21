@@ -1,0 +1,40 @@
+// bpafter https://wxwyjh.chiji-h5.com/api/archive/get
+
+HTTP/1.1 200 OK
+Date: Wed, 20 Feb 2019 06:44:20 GMT
+Content-Length: 731
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+
+{"data":{"record":"{\"uid\":\"oc6rl5ZDYr-DtFmgNIw1CZ3E7rD0\",\"isSoundOff\":false,\"isShackOff\":false,\"GMTimeG\":-1,\"GMTimeP\":-1,\"level\":82,\"lDamage\":186,\"lCount\":142,\"lJiaZhi\":151,\"lRiChang\":68,\"curFu\":4,\"levelFuCount\":[32,32,32,32,6,1,1,1,1,1],\"levelFuDamage\":[186,186,178,130,45,1,1,1,1,1],\"getTime2\":1550644300081,\"bgIndex\":3,\"money\":\"999999999999999\",\"tipFU\":false,\"isGuide\":false,\"tiLi\":72,\"tiLiBackTime\":1550644906904,\"today\":20,\"playCount\":5,\"shareCount\":4,\"videoCount\":6,\"isGuanZhu\":0,\"isShouCang\":true,\"tryFuCount\":4,\"pos\":\"福建,厦门\",\"posUpdate\":18,\"zuanShi\":0,\"getTime\":\"0\",\"sign\":\"ea1233e758f1ff048b0ce282b41d5d2a\"}","gm_record":"","gm_rewards":""},"code":0}
+
+
+
+// bpu https://wxwyjh.chiji-h5.com/api/archive/upload
+
+POST https://wxwyjh.chiji-h5.com/api/archive/upload HTTP/1.1
+charset: utf-8
+Accept-Encoding: gzip
+referer: https://servicewechat.com/wxa2c324b63b2a9e5e/31/page-frame.html
+content-type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Linux; Android 9; LYA-AL10 Build/HUAWEILYA-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Mobile Safari/537.36 MicroMessenger/7.0.3.1400(0x27000338) Process/appbrand1 NetType/WIFI Language/zh_CN
+Content-Length: 788
+Host: wxwyjh.chiji-h5.com
+Connection: Keep-Alive
+
+{"plat":"wx","record":"{\"uid\":\"oc6rl5ZDYr-DtFmgNIw1CZ3E7rD0\",\"isSoundOff\":false,\"isShackOff\":false,\"GMTimeG\":-1,\"GMTimeP\":-1,\"level\":73,\"lDamage\":60,\"lCount\":67,\"lJiaZhi\":34,\"lRiChang\":37,\"curFu\":3,\"levelFuCount\":[6,9,6,9,1,1,1,1,1,1],\"levelFuDamage\":[56,54,49,57,1,1,1,1,1,1],\"getTime2\":1550642364788,\"bgIndex\":1,\"money\":\"999999999\",\"tipFU\":false,\"isGuide\":false,\"tiLi\":73,\"tiLiBackTime\":1550643425418,\"today\":20,\"playCount\":5,\"shareCount\":4,\"videoCount\":6,\"isGuanZhu\":0,\"isShouCang\":true,\"tryFuCount\":4,\"pos\":\"福建,厦门\",\"posUpdate\":18,\"zuanShi\":0,\"getTime\":\"0\",\"sign\":\"e0d7ea0874cd6b868b5cb740ee562f4d\"}","time":1550643444381,"openid":"oc6rl5ZDYr-DtFmgNIw1CZ3E7rD0","sign":"98055fade86fadeb9cbb46ff7a23e4f5"}
+
+
+
+
+POST https://wxwyjh.chiji-h5.com/api/archive/upload HTTP/1.1
+charset: utf-8
+Accept-Encoding: gzip
+referer: https://servicewechat.com/wxa2c324b63b2a9e5e/31/page-frame.html
+content-type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Linux; Android 9; LYA-AL10 Build/HUAWEILYA-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.110 Mobile Safari/537.36 MicroMessenger/7.0.3.1400(0x2700033A) Process/appbrand2 NetType/WIFI Language/zh_CN
+Content-Length: 808
+Host: wxwyjh.chiji-h5.com
+Connection: Keep-Alive
+
+{"plat":"wx","record":"{\"uid\":\"oc6rl5YYqCwsEYEsaKyK-nLGSxwQ\",\"isSoundOff\":false,\"isShackOff\":false,\"GMTimeG\":-1,\"GMTimeP\":-1,\"level\":135,\"lDamage\":97,\"lCount\":106,\"lJiaZhi\":99,\"lRiChang\":99,\"curFu\":6,\"levelFuCount\":[8,14,22,1,7,9,12,1,1,1],\"levelFuDamage\":[70,84,95,1,70,80,97,1,1,1],\"getTime2\":1550649283078,\"bgIndex\":1,\"money\":\"999999999999999\",\"tipFU\":false,\"isGuide\":false,\"tiLi\":40,\"tiLiBackTime\":1550650737230,\"today\":20,\"playCount\":3,\"shareCount\":24,\"videoCount\":7,\"isGuanZhu\":true,\"isShouCang\":true,\"tryFuCount\":3,\"pos\":\"湖北,武汉\",\"posUpdate\":14,\"zuanShi\":100,\"getTime\":\"0\",\"sign\":\"7c5148ac6069d9d108fbafecb06d4ead\"}","time":1550650771368,"openid":"oc6rl5YYqCwsEYEsaKyK-nLGSxwQ","sign":"01cdacf1e8363f5ea2abf0cf1ae8db99"}

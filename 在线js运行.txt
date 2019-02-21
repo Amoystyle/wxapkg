@@ -1,0 +1,42 @@
+https://tool.lu/coderunner/
+
+
+// 用于生成请求数据的内容
+
+var dataLocal = "{\"uid\":\"oc6rl5ZDYr-DtFmgNIw1CZ3E7rD0\",\"isSoundOff\":false,\"isShackOff\":false,\"GMTimeG\":-1,\"GMTimeP\":-1,\"level\":73,\"lDamage\":60,\"lCount\":67,\"lJiaZhi\":34,\"lRiChang\":37,\"curFu\":3,\"levelFuCount\":[6,9,6,9,1,1,1,1,1,1],\"levelFuDamage\":[56,54,49,57,1,1,1,1,1,1],\"getTime2\":1550642364788,\"bgIndex\":1,\"money\":\"999999999\",\"tipFU\":false,\"isGuide\":false,\"tiLi\":73,\"tiLiBackTime\":1550643425418,\"today\":20,\"playCount\":5,\"shareCount\":4,\"videoCount\":6,\"isGuanZhu\":0,\"isShouCang\":true,\"tryFuCount\":4,\"pos\":\"福建,厦门\",\"posUpdate\":18,\"zuanShi\":0,\"getTime\":\"0\",\"sign\":\"e0d7ea0874cd6b868b5cb740ee562f4d\"}"; 
+
+var t = {plat: "wx", record: dataLocal} // 需要替换 record
+var e = [],i = "";
+t.time = 1550643444381,  // 需要替换时间
+t.openid = "oc6rl5ZDYr-DtFmgNIw1CZ3E7rD0", 
+t.wx_appid = "wxa2c324b63b2a9e5e", 
+t.wx_secret = "8fbd540d0b23197df1d5095f0d6ee46d";
+
+for (var s in t) e.push(s);
+e.sort(function (t, e) {
+    return t > e ? 1 : t < e ? -1 : 0
+});
+var n;
+for (n in e) i += (s = e[n]) + "=" + t[s] + "&";
+i = i.substring(0, i.length - 1)
+console.log(i);
+
+
+// 修改money字段后，重新生成用于签名的字符串
+
+var record = "{\"uid\":\"oc6rl5ZDYr-DtFmgNIw1CZ3E7rD0\",\"isSoundOff\":false,\"isShackOff\":false,\"GMTimeG\":-1,\"GMTimeP\":-1,\"level\":82,\"lDamage\":186,\"lCount\":142,\"lJiaZhi\":151,\"lRiChang\":68,\"curFu\":4,\"levelFuCount\":[32,32,32,32,6,1,1,1,1,1],\"levelFuDamage\":[186,186,178,130,45,1,1,1,1,1],\"getTime2\":1550644300081,\"bgIndex\":3,\"money\":\"999999999999\",\"tipFU\":false,\"isGuide\":false,\"tiLi\":72,\"tiLiBackTime\":1550644906904,\"today\":20,\"playCount\":5,\"shareCount\":4,\"videoCount\":6,\"isGuanZhu\":0,\"isShouCang\":true,\"tryFuCount\":4,\"pos\":\"福建,厦门\",\"posUpdate\":18,\"zuanShi\":0,\"getTime\":\"0\",\"sign\":\"fcbcdd14728fc0b52bbb7fbbe084c969\"}"
+
+var t = JSON.parse(record);
+
+var e = [], i = "";
+t.sign = "";
+for (var s in t) e.push(s);
+e.sort(function (t, e) {
+    return t > e ? 1 : t < e ? -1 : 0
+});
+var n;
+for (n in e) i += (s = e[n]) + t[s];
+i = i.substring(0, i.length - 1)
+
+
+console.log(i);
